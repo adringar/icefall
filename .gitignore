@@ -31,6 +31,12 @@ node_modules
 # Ignore SASS config files
 .sass-cache
 
+# --------------------------------------------------
+egs/basque_parliament_1_gttsehu/ASR/dev/dataset/
+egs/basque_parliament_1_gttsehu/ASR/wandb/
+egs/composite_corpus_eu_v2.1/ASR/dev/
+# --------------------------------------------------
+
 *.param
 *.bin
 .DS_Store

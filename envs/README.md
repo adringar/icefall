@@ -35,7 +35,7 @@ pip install git+https://github.com/lhotse-speech/lhotse
 ```
 
 ```bash
-cd ../icefall
+cd ..icefall
 ```
 
 ```bash

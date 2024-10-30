@@ -1,0 +1,9 @@
+log-* # This ignores any file or directory that starts with "log-" followed by any characters
+.DS_Store # This ignores the .DS_Store file that is created by macOS on external drives
+run*.sh # This ignores any file that starts with "run" followed by any characters
+
+# Ignore the raw audio dataset
+dev/dataset/basque_parliament_1_gttsehu
+
+# Ignore the data of the development set
+dev/data

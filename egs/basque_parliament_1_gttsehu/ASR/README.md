@@ -6,6 +6,7 @@ Please refer to <https://k2-fsa.github.io/icefall/recipes/Non-streaming-ASR/libr
 
 # Instructions to execute
 
-## 1. Data Preparation
+## 0. Environment setup
 
+## 1. Data Preparation
 

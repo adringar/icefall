@@ -10,7 +10,9 @@ In this folder already set up enviroments for CUDA can be seen.
 conda env create -f {name_of_environment}.yml
 ```
 
-If the above does not work:
+If the above does not work...
+
+## Manual set up for CUDA=12.1
 
 ```bash
 conda create --name icefall_env121 python=3.9

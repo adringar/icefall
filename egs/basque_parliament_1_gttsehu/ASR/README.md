@@ -8,11 +8,11 @@ Please refer to <https://k2-fsa.github.io/icefall/recipes/Non-streaming-ASR/libr
 
 ## 0. Environment setup
 
-Go to *icefall/egs/basque_parliament_1_gttsehu/envs/* and follow instructions to create the enviroment.
+1. Go to *icefall/egs/basque_parliament_1_gttsehu/envs/* and follow instructions to create the enviroment.
 
-Export icefall python path:
+2. Export icefall python path:
 
-$PYTHONPATH - path where icefall has been cloned
+$PYTHONPATH - {path where icefall has been cloned}
 
 ```bash
 export PYTHONPATH=/tmp/icefall:$PYTHONPATH

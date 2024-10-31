@@ -1,8 +1,10 @@
 # Enviroments
 
-In this folder already set up enviroments for CUDA can be seen.
+In this folder already set up yaml enviroments for CUDA can be seen.
 
 - Name: icefall_env{CUDA version}.yml
+
+If your CUDA version is not listed or you want to set up CUDA from the beggining please reser to: [document](https://k2-fsa.github.io/icefall/installation/index.html)
 
 ## How can to set it up?
 

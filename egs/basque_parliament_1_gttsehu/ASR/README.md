@@ -12,7 +12,7 @@ Please refer to <https://k2-fsa.github.io/icefall/recipes/Non-streaming-ASR/libr
 
 2. Export icefall python path:
 
-$PYTHONPATH - {path where icefall has been cloned}
+/tmp/icefall - {path where icefall has been cloned}
 
 ```bash
 export PYTHONPATH=/tmp/icefall:$PYTHONPATH

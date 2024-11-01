@@ -54,6 +54,7 @@ It supports training with:
 """
 
 import sys
+import random
 import wandb
 import argparse
 import copy
@@ -1525,13 +1526,15 @@ def scan_pessimistic_batches_for_oom(
 
 def main():
 
+    unique_num = random.randint(1, 99999999)
+
     parser = get_parser()
     CustomAsrDataModule.add_arguments(parser)
     args = parser.parse_args()
-    exp_dir = args.exp_dir + f"_transducer_{args.use_transducer}_ctc_{args.use_ctc}_attdecoder_{args.use_attention_decoder}_streaming_{args.causal}"
+    exp_dir = "zipformer" + "/" + args.exp_dir + f"_transducer_{args.use_transducer}_ctc_{args.use_ctc}_attdecoder_{args.use_attention_decoder}_streaming_{args.causal}_{unique_num}"    
     args.exp_dir = Path(exp_dir)
 
-    run_name = f"epoch_{args.num_epochs}_transducer_{args.use_transducer}_ctc_{args.use_ctc}_attdecoder_{args.use_attention_decoder}_streaming_{args.causal}"
+    run_name = f"epoch_{args.num_epochs}_transducer_{args.use_transducer}_ctc_{args.use_ctc}_attdecoder_{args.use_attention_decoder}_streaming_{args.causal}_{unique_num}"
 
     # Initialize WandB
     wandb.init(project="Zipformer", config=vars(args), name=run_name)

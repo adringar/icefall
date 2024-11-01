@@ -8,7 +8,7 @@ set -eou pipefail
 nj=1
 # run step 0 to step 5 by default
 stage=-1
-stop_stage=6
+stop_stage=5
 
 # Note: This script just prepare the minimal requirements that needed by a
 # transducer training with bpe units.
@@ -61,11 +61,11 @@ dl_dir=$PWD/download
 # It will generate data/lang_bpe_xxx,
 # data/lang_bpe_yyy if the array contains xxx, yyy
 vocab_sizes=(
-  # 5000
-  # 2000
-  # 1000
-  # 500
-  256 # Best for basque setup # !
+  5000
+  2000
+  1000
+  500
+  256 # Best for basque setup !
   150 # For short bash (prepare.sh) testing 
 )
 
@@ -258,7 +258,6 @@ if [ $stage -le 5 ] && [ $stop_stage -ge 5 ]; then
   done
 
   log " "
-
 fi
 
 # ---------------------------------------------------------------------------- 
